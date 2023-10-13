@@ -1,0 +1,176 @@
+body{
+    background-image: url('https://img.freepik.com/premium-photo/green-watercolor-background_3590-26.jpg?w=2000');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.obshiy{
+    width: 500px;
+    height: 65vh;
+    border-radius: 20px;
+    border: rgb(89, 141, 201) 10px double;
+    margin: 0 auto;
+    margin-top: 150px ;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-flower-flower-border-romantic-simple-image_22125.jpg');
+    background-size: cover;
+}
+.obshiy1{
+
+    width: 440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #D3D3D3;
+}
+::-webkit-scrollbar-thumb {
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: rgb(16, 16, 78);
+    text-shadow: 1px 1px 5px rgb(41, 41, 184);
+}
+.save{
+    width: 100px;
+    background-color: rgb(89, 141, 201);
+    color: white;
+    height: 50px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(89, 141, 201);
+    user-select: none;
+}
+.save:active {
+    transform: scale(1.2);
+    background-color: rgb(16, 16, 78);
+}
+.save:hover{
+    background-color: rgb(16, 16, 78);
+}
+.obshiy .yuxari{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.obshiy .yuxari input{
+    width: 320px;
+    border-radius: 10px;
+    border: 2px solid rgb(89, 141, 201) ;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+}
+.bu, .edit-input{
+    font-size: 1.4em;
+    color: rgb(16, 16, 78);
+    width: 75%;
+    min-height: 40px;
+    background-color: lightblue;
+    border: lightblue 1px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 2em
+}
+.delBtn{
+    background-color: rgb(16, 16, 78);
+    color: white;
+    width: 30px;
+    height: 30px;   
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.editBtn{
+    margin-left: auto;
+    padding-right: 12px;
+    background-color: lightblue;
+    border: none;
+}
+.editBtn:hover{
+    color: red;
+}
+.delBtn:hover {
+    background-color: red;
+    border: none;
+}
+.save-edit{
+    background-color: rgb(187, 30, 30);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+.save-edit:active{
+    background-color: green;
+}
+
+.edit-input{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-family: cursive;
+
+}
+.todolist{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+.clear-all{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 40px;
+    width: 170px;
+    color: white;
+    background-color: red;
+    margin: 1em auto;
+    outline-style: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+.clear-all:hover {
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 600px) {
+    .obshiy1 {
+            width: 96%;
+    }
+    .obshiy{
+        width: 420px;
+    }
+    .save {
+            width: 80px;
+        }
+    .obshiy .yuxari input {
+            width: 260px;
+            padding-left: 6px;
+        }
+    .obshiy .yuxari {
+        justify-content: space-evenly;
+        width: 90%;
+        }
+    .bu{
+        width: 65%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
